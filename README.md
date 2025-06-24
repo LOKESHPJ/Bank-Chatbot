@@ -55,6 +55,11 @@ This project is a local, privacy-first AI chatbot for banking queries. It uses a
 - Edit the system prompt in `WebSocketChatServer.java` to change AI behavior.
 - Swap Ollama models by changing the model name in the Java server.
 
+## Sample Output
+![WhatsApp Image 2025-06-24 at 22 23 40_40e92147](https://github.com/user-attachments/assets/b5a2195b-01db-471a-9c39-ae9be27aa040)
+![WhatsApp Image 2025-06-24 at 22 25 22_9af7c77b](https://github.com/user-attachments/assets/55ea564d-714e-4f18-8a62-f624855988b4)
+
+
 ## License
 
 MIT License (or your choice)
