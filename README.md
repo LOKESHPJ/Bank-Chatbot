@@ -16,14 +16,7 @@ This project is a local, privacy-first AI chatbot for banking queries. It uses a
 3. **Web chat UI** connects via `ws://localhost:8080` and interacts in real time.
 
 ## Quickstart
-
-1. **Run Ollama LLM:**
-    ```bash
-    ollama serve
-    # (Or just ensure ollama is already running)
-    ```
-
-2. **Start the Java server:**
+1. **Start the Java server:**
     ```bash
     javac -cp ".:Java-WebSocket-1.5.6.jar:slf4j-api-1.7.36.jar:slf4j-simple-1.7.36.jar:jackson-core-2.15.2.jar:jackson-databind-2.15.2.jar:jackson-annotations-2.15.2.jar" WebSocketChatServer.java
     java -cp ".:Java-WebSocket-1.5.6.jar:slf4j-api-1.7.36.jar:slf4j-simple-1.7.36.jar:jackson-core-2.15.2.jar:jackson-databind-2.15.2.jar:jackson-annotations-2.15.2.jar" WebSocketChatServer
