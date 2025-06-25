@@ -1,0 +1,111 @@
+body {
+  background: linear-gradient(135deg, #e3f6ff 0%, #dbeafe 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chat-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 36px rgba(50, 80, 180, 0.14);
+  max-width: 420px;
+  width: 100%;
+  min-height: 570px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+header {
+  background: #0077b6;
+  color: #fff;
+  text-align: left;
+  padding: 1em 1.3em;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #005b8a;
+  display: flex;
+  align-items: center;
+}
+.ai-avatar {
+  font-size: 2em;
+  margin-right: 0.7em;
+}
+.chat-window {
+  flex: 1;
+  padding: 1.2em;
+  overflow-y: auto;
+  background: #f6f8fa;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
+}
+.message {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5em;
+}
+.bubble {
+  padding: 0.8em 1.2em;
+  border-radius: 1.4em;
+  max-width: 72%;
+  word-break: break-word;
+  font-size: 1em;
+  box-shadow: 0 1px 4px rgba(50,80,180,0.06);
+}
+.bubble.user {
+  background: linear-gradient(90deg, #0077b6 60%, #48cae4 100%);
+  color: #fff;
+  align-self: flex-end;
+  border-bottom-right-radius: 0.3em;
+}
+.bubble.ai {
+  background: #e3f6ff;
+  color: #333;
+  align-self: flex-start;
+  border-bottom-left-radius: 0.3em;
+}
+.ai-icon {
+  font-size: 1.3em;
+  margin-right: 0.3em;
+}
+#chat-form {
+  display: flex;
+  padding: 1em;
+  background: #f6f8fa;
+  border-top: 1px solid #dde6ff;
+}
+#input {
+  flex: 1;
+  padding: 0.9em 1em;
+  border-radius: 2em;
+  border: 1px solid #90e0ef;
+  font-size: 1.02em;
+  outline: none;
+  margin-right: 0.6em;
+  transition: border 0.2s;
+}
+#input:focus {
+  border: 1.6px solid #0077b6;
+}
+#send {
+  background: linear-gradient(90deg, #0077b6 60%, #48cae4 100%);
+  border: none;
+  color: #fff;
+  padding: 0 2em;
+  border-radius: 2em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(50,80,180,0.12);
+}
+#send:hover {
+  background: #0077b6;
+}
+.typing-indicator {
+  font-style: italic;
+  color: #888;
+  margin-left: 1em;
+}
